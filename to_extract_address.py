@@ -37,7 +37,7 @@ for i in link_list:
     soup = BeautifulSoup(html_content, 'html.parser')
 
     # Find the element(s) that contain the college address
-    address_elements = soup.find_all('address')
+    address_elements = soup.find_all(re.compile('address'))
 
     # Extract the address text from the element(s)
     address = ''
