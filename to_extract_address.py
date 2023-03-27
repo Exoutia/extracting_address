@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-df = pd.read_excel('/content/Web Scraping Assignment.xlsx')
+df = pd.read_excel('Web Scraping Assignment.xlsx')
 
 df.fillna('0', inplace=True)
 
@@ -52,5 +52,5 @@ addresses
 
 df['ADDRESS'] = addresses
 
-df.to_excel('/content/New_excel.xlsx')
+df.to_excel('New_excel.xlsx')
 
